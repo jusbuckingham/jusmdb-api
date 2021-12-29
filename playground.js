@@ -2,9 +2,9 @@
 
 // Actors.insertMany({
 //     url: "",
-//     title: "",
+//     actor: "",
 //     image_url: "",
-//     synopsis: ""
+//     bio: ""
 //   })
 //   .then((newActors) => {
 //       console.log(newActors);
