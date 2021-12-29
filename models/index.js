@@ -23,4 +23,6 @@ db.on("error", () => {
 
 module.exports = {
   Actors: require("./actors"),
+  Movies: require("./movies"),
+  Tvshows: require("./tvshows"),
 };
