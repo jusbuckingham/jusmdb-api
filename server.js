@@ -6,7 +6,7 @@ app.use(express.json());
 app.get("/actors", async (request, response) => {
 
     try {
-        const actorsArray = await Season.find({});
+        const actorsArray = await Actors.find({});
         response.json({ actorsArray });
     } catch (error) {
         response.status(500).send(error);
