@@ -1,5 +1,7 @@
 const express = require("express");
 const { Actors } = require("./models");
+const { Movies } = require("./models");
+const { Tvshows } = require("./models");
 const app = express();
 
 app.use(express.json());
