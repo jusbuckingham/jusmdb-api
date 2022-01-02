@@ -266,7 +266,7 @@ use(database);
 // Read
 // db.actors.find()
 // db.movies.find()
-// db.tvshows.find()
+db.tvshows.find()
 
 // Update
 // db.actors.updateOne()

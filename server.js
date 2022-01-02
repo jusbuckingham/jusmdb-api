@@ -4,6 +4,15 @@ const { Movies } = require("./models");
 const { Tvshows } = require("./models");
 const app = express();
 
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+});
+
 app.use(express.json());
 app.get("/actors", async (request, response) => {
 
@@ -36,5 +45,5 @@ app.get("/tvshows", async (request, response) => {
 });
 
 app.listen(3000, () => {
-    console.log("Server is running at port 3000")
+    console.log("Server is running at port 3000 🎧")
 });
