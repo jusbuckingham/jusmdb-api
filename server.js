@@ -38,7 +38,7 @@ app.get("/tvshows", async (request, response) => {
 
     try {
         const tvshowsArray = await Tvshows.find({});
-        response.json({ atvshowsArray });
+        response.json({ tvshowsArray });
     } catch (error) {
         response.status(500).send(error);
     }
